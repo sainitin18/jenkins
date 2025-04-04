@@ -6,8 +6,8 @@ pipeline {
     stages {
         stage('Maven clean') {
             steps {
-                
-                    sh 'mvn clean'
+                dir('Fullstack-DockerCompose')
+                {sh 'mvn clean'}
                 }
             }
 
